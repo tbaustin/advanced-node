@@ -15,6 +15,6 @@ install:
   - npm install
   - npm run build
 script: 
-  - nohub npm run start & # start up command in background and if the terminal is closed out don't stop the service
+  - nohup npm run start & # start up command in background and if the terminal is closed out don't stop the service
   - sleep 3 # waits for 3 seconds before running
   - npm run test
